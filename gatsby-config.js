@@ -21,6 +21,7 @@ module.exports = {
         displayName: false
       },
     },
+    "gatsby-plugin-mdx",
   ],
 
 };
