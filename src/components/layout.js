@@ -8,6 +8,9 @@ import {
   navLinkText,
   siteTitle
 } from './layout.module.css'
+import Header from "./header"
+import Footer from "./footer"
+import "../styles/style.css"
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -22,8 +25,8 @@ const Layout = ({ pageTitle, children }) => {
 
   return (
     <main className={container}>
-      <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-      <p className={siteTitle}>{data.site.siteMetadata.title}</p>
+      <div class="gyoza-border"></div>
+      <Header />
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
@@ -33,7 +36,7 @@ const Layout = ({ pageTitle, children }) => {
           </li>
           <li className={navLinkItem}>
             <Link to="/about" className={navLinkText}>
-              About
+              AboutMe
             </Link>
           </li>
           <li className={navLinkItem}>
@@ -43,8 +46,9 @@ const Layout = ({ pageTitle, children }) => {
           </li>
         </ul>
       </nav>
-      <h1 className={heading}>{pageTitle}</h1>
       {children}
+      <Footer />
+      <div class="gyoza-border"></div>
     </main>
   )
 }

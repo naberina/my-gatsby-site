@@ -1,0 +1,70 @@
+/* src/styles/style.css */
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kiwi Maru", serif;
+}
+
+main {
+  max-width: none !important;
+  width: 100%;
+}
+
+.gyoza-border {
+  width: 100%;
+  height: 14px;
+  margin: 10px 0;
+  background-image: url(../images/b_ornament_106jpgset/b_ornament_106_3M.jpg);
+}
+
+.intro-msg {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page_box {
+  max-width: 650px;
+  margin: 30px auto;
+}
+
+.gyoza-img {
+  margin: 0 10px;
+}
+
+/* aboutページ */
+.my_img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.btn-social-square {
+  display: inline-block;
+  text-decoration: none;
+  width: 50px;
+  margin: 2px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 23px;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-social-square i {
+  line-height: 50px;
+}
+.btn-social-square:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.btn-social-square--twitter {
+  background: #22b8ff;
+}
+.btn-social-square--instagram {
+  background: #6680d8;
+}

@@ -1,4 +1,5 @@
 import * as React from 'react'
+import "../styles/header.css"
 
 // Step 1: Import the useStaticQuery hook and graphql tag
 import { useStaticQuery, graphql } from 'gatsby'
@@ -20,7 +21,7 @@ const Header = () => {
   return (
     <header>
       {/* Step 3: Use the data in your component */}
-      <h1>{ data.site.siteMetadata.title }</h1>
+      <h1>{ "本日の餃子" || data.site.siteMetadata.title }</h1>
     </header>
   )
 }
